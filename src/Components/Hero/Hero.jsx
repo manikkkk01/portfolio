@@ -24,7 +24,7 @@ const Hero = () => {
         <div className="hero-connect" >
           <a href="http://www.linkedin.com/in/manikkkk01">Linked In</a></div>
         <div className="hero-resume">
-          <a href="/src/assets/resume.docx" target="_blank" rel="noopener noreferrer">
+          <a href="/src/assets/resume.pdf" target="_blank" rel="noopener noreferrer">
             My resume
           </a></div>
       </div>
@@ -33,3 +33,4 @@ const Hero = () => {
 };
 
 export default Hero;
+
