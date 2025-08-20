@@ -111,6 +111,7 @@
   border-radius: 50px;
   border: 2px solid #fff;
   cursor: pointer;
+  background-color: black;
 }
 
 .hero-resume a{
