@@ -3,7 +3,6 @@
     align-items: center;
     justify-content: space-between;
     margin: 20px 50px;
-
 }
 
 .nav-menu {
@@ -16,12 +15,16 @@
 
 .nav-connect {
     padding: 30px 40px;
-    
     border-radius: 50px;
     background: linear-gradient(267deg, #DA7C25 0.36%, #B923E1 102%);
     font-size: 22px;
     cursor: pointer;
     transition: 0.5s;
+}
+
+.abc {
+    text-decoration: none;
+    color: white;
 }
 
 .nav-connect:hover {
@@ -33,8 +36,52 @@
     height: 75px;
     width: 75px;
     padding-left: 0px;
+    
+
+    
 
 }
+
+.hidden-checkbox {
+    display: none;
+}
+
+.toggle-switch {
+    width: 60px;
+    height: 30px;
+    background-color: #ccc;
+    border-radius: 15px;
+    position: relative;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.toggle-handle {
+    width: 26px;
+    height: 26px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    transition: transform 0.3s ease;
+}
+
+
+.hidden-checkbox:checked+.toggle-switch {
+    background-color: #333;
+    
+}
+
+.hidden-checkbox:checked+.toggle-switch .toggle-handle {
+    transform: translateX(30px);
+    
+}
+
+.themeset img {
+    padding-right: 100px;
+}
+
 
 .nav-menu li {
     display: flex;
@@ -53,33 +100,57 @@
 
 .anchor-link {
     text-decoration: none;
-    color: white;
+    color: gray;
 }
 
-.nav-mob-close{
+.nav-mob-close {
     display: none;
 }
 
-.nav-mob-open{
+.nav-mob-open {
     display: none;
 }
+
 
 @media(max-width:768px) {
     .navbar {
-        margin: 30px;
+        
+        margin: 50px 30px;
+       
+        background: red;
+       
+    }
 
+.profile-img {
+    height: 75px;
+    width: 75px;
+    padding-left: 0px;
+    z-index: 10;
+    position: fixed;
+
+    
+
+}
+
+    .toggle-switch {
+        margin-left: 275px;
+        cursor: pointer;
+        position: fixed;
+    
     }
 
     .nav-connect {
         display: none;
     }
 
+
     .nav-mob-open {
-       height: 30px;
-       width: 40px;
+        height: 30px;
+        width: 40px;
         display: block;
         position: fixed;
         right: 30px;
+        color: black;
     }
 
     .nav-mob-close {
@@ -91,10 +162,11 @@
         width: 40px;
         right: 30px;
     }
-    .nav-menu{
+
+    .nav-menu {
         position: fixed;
         flex-direction: column;
-        align-items:start;
+        align-items: start;
         top: 0;
         gap: 30px;
         background-color: #00093f;
@@ -102,12 +174,12 @@
         height: 100%;
         z-index: 2;
         transition: right 0.5s;
-right: -350px;
+        right: -350px;
     }
 }
 
 
-.nav-menu li{
+.nav-menu li {
     font-size: 20px;
     padding-left: 50px;
     flex-direction: row;
