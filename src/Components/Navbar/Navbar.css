@@ -54,6 +54,11 @@
     position: relative;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    margin-left: 10px;
+    
+}
+.togggler{
+    margin-right:-110px ;
 }
 
 .toggle-handle {
@@ -117,8 +122,12 @@
         
         margin: 50px 30px;
        
-        background: red;
+        
        
+    }
+    .togggler{
+        margin-left: 130px;
+        position: fixed;
     }
 
 .profile-img {
@@ -133,9 +142,10 @@
 }
 
     .toggle-switch {
-        margin-left: 275px;
+        margin-left: 185px;
         cursor: pointer;
         position: fixed;
+        
     
     }
 
