@@ -1,6 +1,7 @@
 import React, { useRef, useState } from 'react'
 import './Navbar.css'
 import logo from '../../assets/logo2.png'
+import toggler from '../../assets/icontoggle.png'
 import underline from '../../assets/nav_underline.svg'
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 import menu_open from '../../assets/menu_open.svg'
@@ -27,6 +28,7 @@ const Navbar = () => {
                 <li><AnchorLink className='anchor-link' offset={50} href='#services'><p onClick={()=>setMenu("services")}>Services</p></AnchorLink>{menu==="services"?<img src={underline} alt=''/>:<></>}</li>
                 <li><AnchorLink className='anchor-link' offset={50} href='#work'><p onClick={()=>setMenu("work")}>Portfolio</p></AnchorLink>{menu==="work"?<img src={underline} alt=''/>:<></>}</li>
             </ul>
+            <img src={toggler} alt="" className='togggler' />
             <input type="checkbox" id="day-night-toggle" class="hidden-checkbox"/>
 <label for="day-night-toggle" class="toggle-switch">
   <span class="toggle-handle"></span>
