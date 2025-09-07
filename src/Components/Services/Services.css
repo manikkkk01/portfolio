@@ -93,8 +93,8 @@ background-clip: text;
         margin-right: -20px;
     }
     .services-format{
-        gap: 20px;
-        padding: 32px;
+        gap: 10px;
+        padding: 0px;
     }
     .services-format h2{
         font-size: 28px;
