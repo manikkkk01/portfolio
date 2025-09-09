@@ -79,10 +79,12 @@
 
 .contact-right input {
     border: none;
+    color: white;
+    background:transparent;
     width: 700;
     height: 78px;
     padding-left: 20px;
-    border: 2px solid black;
+    border: 2px solid white;
     border-radius: 4px;
     font-family: 'outfit';
     font-size: 20px;
@@ -90,12 +92,14 @@
 
 .contact-right textarea {
     width: 650px;
+    background: transparent;
     border: none;
     padding: 25px;
-    border: 2px solid black ;
+    border: 2px solid white ;
     border-radius: 4px;
     font-family: 'outfit';
     font-size: 20px;
+    color: white;
 }
 
 .contact-submit {
