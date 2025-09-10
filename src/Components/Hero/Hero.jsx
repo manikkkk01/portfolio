@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import './Hero.css';
 import profile from '../../assets/profile_img.jpg';
+import resume from '../../assets/resume.pdf';
 
 const Hero = () => {
   useEffect(() => {
@@ -53,7 +54,7 @@ const Hero = () => {
           <a href="http://www.linkedin.com/in/manikkkk01" target="_blank" rel="noopener noreferrer">Linked In</a>
         </div>
         <div className="hero-resume">
-          <a href="#" target="_blank" rel="noopener noreferrer">
+          <a href={resume} target="_blank" rel="noopener noreferrer">
             My resume
           </a>
         </div>
@@ -63,3 +64,4 @@ const Hero = () => {
 };
 
 export default Hero;
+
